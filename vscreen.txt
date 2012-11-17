@@ -1,0 +1,13 @@
+define 3 screen pts for physical screen. 4 or more for projection.
+screen pt is equivalent to screen line (projective)
+
+(center, x, y) //pts
+(top, left, right) //lines
+(bottom, left, top) //lines
+(TL, TR, BR) // top left, ..., bottom right
+
+show intersection points on 2d screen
+
+update point (front)
+computeIntersection(pt, pt) // 3d line and plane intersection
+"" (pt, radius) // sphere intersection
