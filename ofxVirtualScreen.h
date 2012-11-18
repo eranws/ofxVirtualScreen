@@ -1,4 +1,6 @@
-#pragma once
+#ifndef _OFX_VIRTUAL_SCREEN_
+#define _OFX_VIRTUAL_SCREEN_
+
 #include "ofNode.h"
 
 class SceneItem : public ofNode
@@ -43,6 +45,7 @@ public:
 * Determinant: http://mathworld.wolfram.com/Determinant.html
 */
 
+/*
 float determinant(const ofMatrix4x4& _mat)
 {
 	
@@ -74,3 +77,6 @@ float determinant(const ofMatrix4x4& _mat)
 
 	return det;
 }
+
+*/
+#endif
