@@ -10,11 +10,7 @@ public:
 
 class Sensor : public SceneItem
 {
-public:
-	Sensor(void)
-	{
-		setScale(200, 15, 30);
-	}
+
 };
 
 class Screen: public SceneItem

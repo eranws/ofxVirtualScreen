@@ -1,16 +1,21 @@
 #include "ofxVirtualScreen.h"
 #include "ofAppRunner.h"
 
-
 Scene::Scene(void)
 {
-	screen.setGlobalPosition(0, -50-163, 0);
+	sensor.setParent(*this);
+	sensor.setPosition(0, 0, 0);
+	sensor.setScale(180, 50, 35);
+	sensor.color = ofColor::yellow;
+
+
 	screen.setScale(520.0, 326.0, 20); // visual
 	//setScale(559.7, 366.0, 201.5); //physical
+	
+	screen.setParent(sensor);
+	screen.setPosition(0, (-1) * (sensor.getScale().y + getScale().y / 2), 0);
 	screen.color = ofColor::red; 
 
-	sensor.setGlobalPosition(0, 0, 0);
-	sensor.color = ofColor::yellow; 
 }
 
 void Scene::customDraw()
