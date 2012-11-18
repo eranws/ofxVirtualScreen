@@ -5,23 +5,18 @@
 Scene::Scene(void)
 {
 	screen.setGlobalPosition(0, -50-163, 0);
+	screen.setScale(520.0, 326.0, 20); // visual
+	//setScale(559.7, 366.0, 201.5); //physical
 	screen.color = ofColor::red; 
 
 	sensor.setGlobalPosition(0, 0, 0);
 	sensor.color = ofColor::yellow; 
-
-}
-
-
-Scene::~Scene(void)
-{
 }
 
 void Scene::customDraw()
 {
 	sensor.draw();
 	screen.draw();
-
 }
 
 
